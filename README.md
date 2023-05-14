@@ -1,6 +1,8 @@
 # Obsidian Wofflix
 A mish-mash of my favourite features from other themes all crammed into one because I'm tired of switching back and forth six million times a day. Built for [Obsidian](https://obsidian.md).
 
+![wofflix thenme](obsidian-wofflix.png)
+
 ## Installation
 Make a new folder called wofflix in your Obsidian themes folder -> ``./obsidian/themes/wofflix/`` and put the ``manifest.json`` and ``theme.css`` files in.
 
