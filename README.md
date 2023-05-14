@@ -18,5 +18,7 @@ If you had Obsidian open during installation, relaunch the application and go to
 - Dynamic folder colouring
 - Card workspace layout!
 
+![wofflix checkboxes](wofflix-checkboxes.png)
+
 ## Contributing
 I honestly doubt you'd want to contribute to this mess of a codebase. I'd highly recommend booking a session with a therapist in advance because I'm pretty sure CSS is the leading cause of software engineer depression. Otherwise, you're welcome to just poke around the code and modify things however you want without opening a pull request.
