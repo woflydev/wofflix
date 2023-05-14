@@ -12,3 +12,8 @@ If you had Obsidian open during installation, relaunch the application and go to
 - Integration with [Day Planner](https://github.com/lynchjames/obsidian-day-planner)
 - Custom checkboxes
 - Integration with [Task Collector](https://github.com/ebullient/obsidian-task-collector)
+- Floating status bar (if you're into that sorta thing)
+- Revamped callouts wihout colour blending (i hated it, don't judge)
+- Animated tab layout
+- Dynamic folder colouring
+- Card workspace layout!
