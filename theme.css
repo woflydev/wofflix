@@ -2074,7 +2074,7 @@ settings:
   -
     id: anuppuccin-url-custom-rainbow-colors
     title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css)."
+    description: "Download the snippet through [this link](https://github.com/woflydev/)."
     type: info-text
     markdown: true
   -
@@ -2429,34 +2429,6 @@ settings:
     type: variable-number
     default: 20
     format: px
-
-# Credits
-
-  -
-    id: anuppuccin-support
-    title: Support AnuPpuccin
-    description: If you like the theme, here are some ways to support development
-    type: heading
-    level: 1
-    collapsed: true
-  -
-    id: anuppuccin-url-donate
-    title: Buy Me a Coffee
-    description: "[https://www.buymeacoffee.com/anubisnekhet](https://www.buymeacoffee.com/anubisnekhet)"
-    type: info-text
-    markdown: true
-  -
-    id: anuppuccin-url-star-repo
-    title: Star the Theme on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin](https://github.com/anubisnekhet/anuppuccin)"
-    type: info-text
-    markdown: true
-  -
-    id: anuppuccin-url-submit-issue
-    title: Submit an Issue on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin/issues](https://github.com/anubisnekhet/anuppuccin/issues)"
-    type: info-text
-    markdown: true
 
 */
 /*------------------Defining Colorschemes-------------------*/
