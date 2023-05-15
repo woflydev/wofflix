@@ -4089,9 +4089,11 @@ body.anp-card-layout .workspace .workspace-tabs.mod-stacked .workspace-leaf {
 body.anp-card-layout .workspace .workspace-tabs.mod-stacked .workspace-tab-container {
   padding-bottom: var(--anp-card-layout-padding, 10px);
 }
+
+/* bring back tab guides when dragging */
 body.anp-card-layout .workspace-drop-overlay:before {
-  width: calc(100% - 6px - var(--anp-card-layout-padding, 0) * 2);
-  height: calc(100% - 6px - var(--anp-card-layout-padding, 0) * 2);
+  /*width: calc(100% - 6px - var(--anp-card-layout-padding, 0) * 2);
+  height: calc(100% - 6px - var(--anp-card-layout-padding, 0) * 2);*/
   margin: auto;
 }
 
@@ -4239,11 +4241,8 @@ body.anp-border-layout .workspace-ribbon.mod-left, body.anp-border-layout .works
   --divider-color: transparent;
 }
 
-/* AGPLv3 License
+/*
 Floating Status Bar
-Author: AnubisNekhet
-Note: If you decide to implement it in your theme or redistribute it, please keep this comment (Especially for *certain* individuals who may try to rebrand it as their own :))
-Support me: https://buymeacoffee.com/AnubisNekhet
 */
 .anp-floating-status-bar {
   --status-bar-position: absolute;
