@@ -2410,7 +2410,7 @@ settings:
     id: anp-card-layout-padding
     title: Card padding
     type: variable-number
-    default: 10
+    default: 6
     format: px
   -
     id: anp-card-header-left-padding
@@ -2603,7 +2603,7 @@ settings:
   --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 245, 194, 231));
   --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 203, 166, 247));
   --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 243, 139, 168));
-  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 235, 160, 172));
+  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 237, 126, 144));
   --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 250, 179, 135));
   --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 249, 226, 175));
   --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 166, 227, 161));
@@ -2621,9 +2621,11 @@ settings:
   --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 87, 82, 105));
   --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 45, 40, 72));
   --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 48, 45, 65));
-  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 30, 30, 46));
+  /* old base colour, causes eye strain --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 30, 30, 46));*/
+  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 32, 32, 61));
   --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 26, 24, 38));
-  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 22, 19, 32));
+  /* old background colour --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 22, 19, 32)); */
+  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 29, 26, 38));
 }
 
 .theme-dark {
@@ -7945,6 +7947,11 @@ body.theme-dark.theme-dark {
   padding-top: 0;
 }
 
+/* inserts margins around the cards */
+.workspace-tab-container .workspace-leaf-content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 :root {
 	--accent-h: var(--setting-accent-h-dark, 207) !important;
@@ -7962,6 +7969,12 @@ body.theme-dark.theme-dark {
 	color: white !important;
 }
 
+/* fixes the toggle being offset, extremely annoying */
+.svelte-e43ld1 input {
+  position: relative !important;
+  top: -.27rem;
+}
+
 .day-planner-progress-bar {
   margin-top: 0 !important;
 }
@@ -7970,8 +7983,11 @@ body .event_item.svelte-e43ld1.svelte-e43ld1:hover {
   box-shadow: none;
 }
 
+/* fixes the auto toggle background */
 #scroll-controls.svelte-e43ld1 {
-  padding-top: 10px !important;
+  background-color: rgba(var(--ctp-base)) !important;
+  border-radius: 0.05rem;
+  padding-top: 12px !important;
 }
 #scroll-controls.svelte-e43ld1 label.svelte-e43ld1 {
   margin-block: 0 !important;
@@ -7984,12 +8000,12 @@ body .event_item.svelte-e43ld1.svelte-e43ld1:hover {
   margin-top: var(--size-4-1);
 }
 .workspace-leaf-content[data-type=timeline] .view-content input[type=checkbox]::before {
-  color: var(--accent-active) !important;
-  background-color: var(--accent-active) !important;
+  color: white !important;
+  background-color: white !important;
 }
 .workspace-leaf-content[data-type=timeline] .view-content input[type=checkbox]:checked::before {
   color: var(--text-on-accent) !important;
-  background-color: var(--text-on-accent) !important;
+  background-color: rgba(var(--ctp-base)) !important;
 }
 .workspace-leaf-content[data-type=timeline] .view-content input[type=checkbox]:checked::after {
   content: none;
@@ -8059,7 +8075,7 @@ body .event_item.svelte-e43ld1.svelte-e43ld1:hover {
 }
 
 body {
-  --stauts-bar-background-opacity: 0.85;
+  --stauts-bar-background-opacity: 0.95;
 }
 
 body .status-bar {
@@ -8069,15 +8085,17 @@ body .status-bar {
   transition: var(--animation);
 	
 	border-radius: .65rem;
-	
+	box-shadow: 0 0 3px #000000;
+
 	left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 .status-bar {
-  --status-bar-background: hsla(var(--accent-h),
-      var(--accent-s),
-      calc(var(--accent-l) / 6),
-      var(--stauts-bar-background-opacity));
+  --status-bar-background: 
+    hsla(var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) / 6),
+    var(--stauts-bar-background-opacity));
 }
 
 /* table fix */
