@@ -13,7 +13,7 @@ If you had Obsidian open during installation, relaunch the application and go to
 - Integration with [Task Collector](https://github.com/ebullient/obsidian-task-collector).
 - Custom checkboxes, see **Checkbox Usage Reference**.
 - Floating status bar, similar to the MacOS Dock (if you're into that sorta thing).
-- Revamped nested callouts wihout colour blending (I hated it, don't judge).
+- Revamped nested callouts without colour blending (I hated it, don't judge).
 - Animated tab layout.
 - Dynamic folder colouring.
 - Card workspace layout!
