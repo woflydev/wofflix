@@ -1,6 +1,6 @@
 # Obsidian Wofflix
 ### This repository is still up-to-date with the latest version of Obsidian.
-### Last Compatibility Check: 15th October 2024
+### Last Compatibility Check: 5th of February 2025
 
 A mish-mash of my favourite features from other themes all crammed into one because I'm tired of switching back and forth six million times a day. Built for [Obsidian](https://obsidian.md).
 
